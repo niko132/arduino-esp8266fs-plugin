@@ -15,11 +15,10 @@ jdk:
   
 deploy:
   provider: releases
-  api_key: $GITHUB_API_KEY
+  api_key: 
+    secure: $GITHUB_API_KEY
   file: $release_zip
   skip_cleanup: true
-  on:
-    tags: true
 
 script:
   - export SRC=$PWD
