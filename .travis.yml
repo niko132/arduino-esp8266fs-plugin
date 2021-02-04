@@ -12,6 +12,14 @@ addons:
 
 jdk:
   - openjdk11
+  
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file: $release_zip
+  skip_cleanup: true
+  on:
+    tags: true
 
 script:
   - export SRC=$PWD
