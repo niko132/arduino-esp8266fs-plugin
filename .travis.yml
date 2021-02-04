@@ -11,7 +11,7 @@ addons:
     - ant
 
 jdk:
-  - oraclejdk8
+  - openjdk11
 
 script:
   - export SRC=$PWD
